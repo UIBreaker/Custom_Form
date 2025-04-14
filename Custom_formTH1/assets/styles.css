@@ -139,3 +139,53 @@ main {
   opacity: 1;
   background: var(--secondary-color);
 }
+
+.container {
+  display: flex;
+}
+.contact-form {
+  flex-grow: 1;
+  padding: 28px 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-error {
+  display: none;
+}
+.form-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #131434;
+}
+
+.form-input {
+  width: 220px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e3e3e9;
+  padding: 8px 0 14px 0;
+  color: #0d0d3b;
+}
+
+.form-group:focus-within .form-label {
+  color: #5f42b6;
+}
+
+.form-group:focus-within .form-input {
+  border-color: #5f42b6;
+}
+
+.form-input,
+.form-label {
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+}
