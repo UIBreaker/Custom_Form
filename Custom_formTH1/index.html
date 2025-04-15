@@ -118,9 +118,55 @@
                 <p class="form-error">Vui lòng nhập trường này</p>
               </div>
             </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="" class="form-label large">
+                  What the of website do you need?
+                </label>
+                <div class="radio-group">
+                  <div class="radio-btn">
+                    <input type="radio" name="type" id="Web-Design" />
+                    <label for="Web-Design">Web Design</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input type="radio" name="type" id="Web-Development" />
+                    <label for="Web-Development">Web Development</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input type="radio" name="type" id="Login-Design" />
+                    <label for="Login-Design">Login Design</label>
+                  </div>
+                  <div class="radio-btn">
+                    <input type="radio" name="type" id="other" />
+                    <label for="other">Other</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="message" class="form-message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-textarea"
+                  placeholder="Write your message..."
+                  oninput="onResize(this)"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-row submit-box">
+              <button class="submit-btn" type="submit">Send Message</button>
+            </div>
           </form>
         </div>
       </div>
     </main>
+    <script>
+      function onResize(e) {
+        e.style.height = "auto";
+        e.style.height = e.scrollHeight + 3 + "px";
+      }
+    </script>
   </body>
 </html>
