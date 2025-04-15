@@ -157,18 +157,38 @@ main {
   flex-direction: column;
 }
 
-.form-error {
+/* .form-error {
   display: none;
+} */
+
+.form-error {
+  margin-top: 4px;
+  font-size: 1.3rem;
+  color: red;
+  visibility: hidden;
 }
+
+.form-group:has(:invalid:not(:placeholder-shown)) .form-error {
+  visibility: visible;
+}
+
 .form-label {
   font-size: 1.1rem;
   font-weight: 700;
   color: #131434;
 }
 
-.form-textarea,
 .form-input {
   width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e3e3e9;
+  padding: 8px 0 14px 0;
+  color: #0d0d3b;
+}
+
+.form-textarea {
+  width: 150%;
   outline: none;
   border: none;
   border-bottom: 2px solid #e3e3e9;
@@ -273,6 +293,11 @@ main {
   border-radius: 8px;
   font-weight: 600;
   font-size: 1.3rem;
+}
+
+.submit-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .submit-box {
